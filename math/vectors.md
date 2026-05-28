@@ -23,7 +23,7 @@ print(x.ndim) # 1  - one dimentional array
 
 
 
-##Addition and Scalar multiplication
+## 2. Addition and Scalar multiplication
 
 **Vector Addition** is element-wise. Dimentons must match.
 
