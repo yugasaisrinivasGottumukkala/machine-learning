@@ -23,3 +23,24 @@ print(x.ndim) # 1  - one dimentional array
 
 ```
 
+## Addition and Scalar multiplication
+
+**Vector Addition** is element-wise. Dimentons must match.
+
+$$ a + b = (a_1 + b_1, a_2 + b_2, \dots, a_n + b_n) $$
+
+**Scalar Multiplication** multiplies each element by a number or constant.
+
+$$ \alpha \cdot a = (\alpha a_1, \alpha a_2, \dots, \alpha a_n)$$
+
+```python 
+a = np.array([1, 2, 3])
+b = np.array([4, 5, 6])
+print(a + b)       #[5 7 9]
+print(3 * a)       #[3 6 9]
+print(a - 2 * b)   #[-7 -8 -9]
+```
+
+**Intuition:** Addition is like "gluing" movements. if `a` is "a 3-meter step east" and `b` is "a 4-meter step north", then`a + b` is a diagonal step.
+
+```
