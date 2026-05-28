@@ -21,7 +21,7 @@ print(x.shape) #(5,)
 print(x.ndim) # 1  - one dimentional array
 ```
 
-```
+
 
 ##Addition and Scalar multiplication
 
