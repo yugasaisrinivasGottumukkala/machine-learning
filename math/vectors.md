@@ -21,7 +21,7 @@ print(x.shape) #(5,)
 print(x.ndim) # 1  - one dimentional array
 ```
 
-
+---
 
 ## 2. Addition and Scalar multiplication
 
@@ -43,4 +43,29 @@ print(a - 2 * b)   #[-7 -8 -9]
 
 **Intuition:** Addition is like "gluing" movements. if `a` is "a 3-meter step east" and `b` is "a 4-meter step north", then`a + b` is a diagonal step.
 
+---
+
+## 3. Dot Product
+
+The most important operation in ML. Without exaggeration.
+
+$$a \cdot b = \sum_{i=1}^{n} a_i b_i = a_1 b_1 + a_2 b_2 + \dots +a_n b_n $$
+
+Result -- **one number**(scalar).
+
+```python
+a =np.array([1, 2, 3])
+b =np.array([4, 5, 6])
+
+#Three equivalent ways
+print(np.dot(a, b))  #32
+print(a @b)          #32 -- operator @
+print((a) *(b).sum()) #32
 ```
+
+**Where is it in ML:**
+-One neuron calculates `w . x + b` - is the dot product of the weights and the input.
+-In attention you count `Q . K` - proximity of request to each key.
+-In recommendation systems, user item gives an estimate.
+
+---
